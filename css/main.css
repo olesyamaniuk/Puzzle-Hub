@@ -243,6 +243,8 @@ a {
   .navigation-img {
     display: flex;
     margin-right: 30px;
+    width: 373px;
+    height: 40px;
   }
   .policy-terms-header__icon--menu {
     display: none;
@@ -340,10 +342,16 @@ a {
   letter-spacing: 0%;
   padding: 24px 0 40px;
 }
-.home__google-button_link:hover {
+.home__google-button_image {
+  width: 345px;
+  height: 44px;
+}
+.home__google-button_link:hover .home__google-button_image {
+  content: url("/image/bb.png");
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+
 .home-img {
   display: none;
 }
@@ -382,6 +390,16 @@ a {
     letter-spacing: 0%;
     text-align: left;
     padding: 40px 0 56;
+  }
+  .home__google-button_image {
+    width: 196px;
+    height: 48px;
+    content: url("/image/dd.png");
+  }
+  .home__google-button_link:hover .home__google-button_image {
+    content: url("/image/desk-hover.png");
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
   }
 }
 .about {
@@ -594,7 +612,11 @@ a {
   height: 145px;
   padding: 16px;
   background: rgba(184, 222, 233, 1);
+  transition: all 0.3s ease-in-out;
   border-radius: 12px;
+}
+.reviews-item:hover {
+  background: rgba(213, 237, 244, 1);
 }
 .reviews-item-top {
   display: flex;
@@ -669,10 +691,12 @@ a {
 .faq-item {
   padding: 16px;
   border-radius: 12px;
-
+  transition: all 0.3s ease-in-out;
   border: 2px solid rgba(0, 134, 212, 1);
 }
-
+.faq-item:hover {
+  background: rgba(232, 242, 245, 1);
+}
 .faq-question {
   display: flex;
   align-items: center;
